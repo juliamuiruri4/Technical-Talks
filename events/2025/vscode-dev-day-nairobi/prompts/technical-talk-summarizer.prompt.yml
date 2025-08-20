@@ -1,0 +1,46 @@
+name: "Technical Talk Summary Generator"
+description: >
+  Given details and resources for a technical talk, generate a polished
+  Markdown blog-style summary including metadata, introduction,
+  importance, content overview, takeaways, call to action, and resources.
+model: openai/gpt-4o  # or your preferred GitHub-hosted model
+modelParameters:
+  temperature: 0.7
+  max_tokens: 1024
+
+messages:
+  - role: system
+    content: |
+      You are an expert technical writer and developer advocate. Your job is
+      to create engaging, reader-friendly Markdown blog posts that summarize
+      technical talks. Follow the specified structure and style guidelines.
+
+  - role: user
+    content: |
+      Here are the session details and resources:
+      ---
+      event: "{{event}}"
+      date: "{{date}}"
+      location: "{{location}}"
+      session_title: "{{session_title}}"
+      abstract: |
+        {{abstract}}
+      speaker: Julia Muiruri, Developer Advocate
+      resources:
+        - code_snippets: "{{code_snippets_path_or_url}}"
+        - slides_pdf: "{{slides_pdf_path_or_url}}"
+        - additional_links: "{{additional_links}}"
+
+      **Instructions for the summary:**
+
+      1. At the top, include YAML-style frontmatter with: event, date, location, session title, and speaker.
+      2. **Introduction**: Contextualize the session and summarize its goals.
+      3. **Why It Matters**: Explain the significance of the topic to developers today.
+      4. **Session Content**: Use headings/subheadings, embed code snippets as fenced Markdown blocks, reference slides/demos when applicable.
+      5. **Key Takeaways**: List 3–5 bullet points of main lessons.
+      6. **Call to Action**: Encourage readers to explore code, slides, demos, or related resources.
+      7. **Resources Section**: Include links to GitHub repo, slides, demos, and documentation.
+
+      Write in a clear, professional, developer-focused tone with short, skimmable paragraphs and appropriate emphasis (e.g., **bold**, *italics*).
+
+      Use Markdown formatting throughout.
