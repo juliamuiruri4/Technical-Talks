@@ -44,6 +44,10 @@ A: No, you are not required to present. The event includes a joint introduction 
 
 A: Organizers manage local logistics as needed.
 
+**Q: Our school will still be on holiday during the event. How should I go about setting up the Live viewing event for my community?**
+
+A: Live viewing events are designed to be in-person gatherings. If your school is on holiday and an in-person event isn’t possible, we encourage you to share information about the event with your community so members can join online individually.
+
 ### Technical Requirements
 
 **Q: What are the technical requirements for attendees?**
