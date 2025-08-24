@@ -24,12 +24,12 @@ messages:
       location: "{{location}}"
       session_title: "{{session_title}}"
       abstract: |
-        {{abstract}}
+        "{{abstract}}"
       speaker: Julia Muiruri, Developer Advocate
       resources:
-        - code_snippets: "{{code_snippets_path_or_url}}"
-        - slides_pdf: "{{slides_pdf_path_or_url}}"
-        - additional_links: "{{additional_links}}"
+        code_snippets: "{{code_snippets_path_or_url}}"
+        slides_pdf: "{{slides_pdf_path_or_url}}"
+        additional_links: "{{additional_links}}"
 
       **Instructions for the summary:**
 
@@ -43,4 +43,4 @@ messages:
 
       Write in a clear, professional, developer-focused tone with short, skimmable paragraphs and appropriate emphasis (e.g., **bold**, *italics*).
 
-      Use Markdown formatting throughout.
+      Use Markdown formatting throughout. find error here and coorect soo that is better
